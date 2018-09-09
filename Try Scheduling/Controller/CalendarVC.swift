@@ -198,7 +198,4 @@ extension CalendarVC {
     
     func weekdaySymbolType() -> WeekdaySymbolType { return .short }
     
-    func selectionViewPath() -> ((CGRect) -> (UIBezierPath)) {
-        return { UIBezierPath(rect: CGRect(x: 0, y: 0, width: $0.width, height: $0.height)) }
-    }
 }
