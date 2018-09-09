@@ -192,7 +192,7 @@
         <!--Calendar-->
         <scene sceneID="4T0-LT-C4o">
             <objects>
-                <viewController id="ZzI-gB-LK0" customClass="CalendarVCViewController" customModule="Try_Scheduling" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZzI-gB-LK0" customClass="CalendarVC" customModule="Try_Scheduling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tdh-np-ve0"/>
                         <viewControllerLayoutGuide type="bottom" id="vf5-VK-wZx"/>
