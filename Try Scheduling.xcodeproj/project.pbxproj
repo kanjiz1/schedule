@@ -11,7 +11,7 @@
 		B991EC951F250C058B328FA3 /* Pods_Try_Scheduling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A20970ED17ECD79E3E9642D /* Pods_Try_Scheduling.framework */; };
 		C08B669763DDCBF9F15156C0 /* Pods_Try_SchedulingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16966E73EF43B92F66973DE2 /* Pods_Try_SchedulingTests.framework */; };
 		CD0EED6E2144007B00CE4D7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED6D2144007B00CE4D7C /* AppDelegate.swift */; };
-		CD0EED702144007B00CE4D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED6F2144007B00CE4D7C /* ViewController.swift */; };
+		CD0EED702144007B00CE4D7C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED6F2144007B00CE4D7C /* LoginVC.swift */; };
 		CD0EED732144007B00CE4D7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0EED712144007B00CE4D7C /* Main.storyboard */; };
 		CD0EED762144007B00CE4D7C /* Try_Scheduling.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED742144007B00CE4D7C /* Try_Scheduling.xcdatamodeld */; };
 		CD0EED782144007D00CE4D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD0EED772144007D00CE4D7C /* Assets.xcassets */; };
@@ -19,6 +19,11 @@
 		CD0EED862144007D00CE4D7C /* Try_SchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED852144007D00CE4D7C /* Try_SchedulingTests.swift */; };
 		CD0EED912144007D00CE4D7C /* Try_SchedulingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED902144007D00CE4D7C /* Try_SchedulingUITests.swift */; };
 		CDB4F09721440A8400DAEB93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDB4F09621440A8400DAEB93 /* GoogleService-Info.plist */; };
+		CDB4F09921440E2600DAEB93 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F09821440E2600DAEB93 /* DataService.swift */; };
+		CDB4F09B2144139A00DAEB93 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F09A2144139A00DAEB93 /* UIViewControllerExt.swift */; };
+		CDB4F09D214414A400DAEB93 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F09C214414A400DAEB93 /* UIViewExt.swift */; };
+		CDB4F09F214415C300DAEB93 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F09E214415C300DAEB93 /* AuthService.swift */; };
+		CDB4F0A12144B40100DAEB93 /* InSetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A02144B40100DAEB93 /* InSetTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +52,7 @@
 		AAB767FE1D1583A429F6EBC9 /* Pods-Try SchedulingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try SchedulingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Try SchedulingTests/Pods-Try SchedulingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD0EED6A2144007B00CE4D7C /* Try Scheduling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Try Scheduling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0EED6D2144007B00CE4D7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD0EED6F2144007B00CE4D7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD0EED6F2144007B00CE4D7C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CD0EED722144007B00CE4D7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD0EED752144007B00CE4D7C /* Try_Scheduling.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Try_Scheduling.xcdatamodel; sourceTree = "<group>"; };
 		CD0EED772144007D00CE4D7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +65,11 @@
 		CD0EED902144007D00CE4D7C /* Try_SchedulingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try_SchedulingUITests.swift; sourceTree = "<group>"; };
 		CD0EED922144007D00CE4D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDB4F09621440A8400DAEB93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CDB4F09821440E2600DAEB93 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		CDB4F09A2144139A00DAEB93 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExt.swift; path = "Try Scheduling/Services/UIViewControllerExt.swift"; sourceTree = SOURCE_ROOT; };
+		CDB4F09C214414A400DAEB93 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExt.swift; path = "Try Scheduling/Services/UIViewExt.swift"; sourceTree = SOURCE_ROOT; };
+		CDB4F09E214415C300DAEB93 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CDB4F0A02144B40100DAEB93 /* InSetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InSetTextField.swift; path = "Try Scheduling/Services/InSetTextField.swift"; sourceTree = SOURCE_ROOT; };
 		D2F1FBC42F8192DFA4891679 /* Pods-Try Scheduling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try Scheduling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling.release.xcconfig"; sourceTree = "<group>"; };
 		E52CDA17182082D92D2BB80E /* Pods-Try SchedulingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try SchedulingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Try SchedulingTests/Pods-Try SchedulingTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6CBED7ABFA671E4C6DB3D92 /* Pods-Try SchedulingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try SchedulingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Try SchedulingUITests/Pods-Try SchedulingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -165,7 +175,7 @@
 		CDB4F0912144083700DAEB93 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				CD0EED6F2144007B00CE4D7C /* ViewController.swift */,
+				CD0EED6F2144007B00CE4D7C /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +191,7 @@
 		CDB4F0932144084900DAEB93 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CDB4F0A02144B40100DAEB93 /* InSetTextField.swift */,
 			);
 			name = View;
 			path = "New Group1";
@@ -189,6 +200,8 @@
 		CDB4F0942144086400DAEB93 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CDB4F09A2144139A00DAEB93 /* UIViewControllerExt.swift */,
+				CDB4F09C214414A400DAEB93 /* UIViewExt.swift */,
 			);
 			name = Extensions;
 			path = "New Group2";
@@ -197,6 +210,8 @@
 		CDB4F0952144087200DAEB93 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				CDB4F09821440E2600DAEB93 /* DataService.swift */,
+				CDB4F09E214415C300DAEB93 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -431,9 +446,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD0EED702144007B00CE4D7C /* ViewController.swift in Sources */,
+				CDB4F09D214414A400DAEB93 /* UIViewExt.swift in Sources */,
+				CDB4F09B2144139A00DAEB93 /* UIViewControllerExt.swift in Sources */,
+				CD0EED702144007B00CE4D7C /* LoginVC.swift in Sources */,
+				CDB4F0A12144B40100DAEB93 /* InSetTextField.swift in Sources */,
 				CD0EED762144007B00CE4D7C /* Try_Scheduling.xcdatamodeld in Sources */,
 				CD0EED6E2144007B00CE4D7C /* AppDelegate.swift in Sources */,
+				CDB4F09921440E2600DAEB93 /* DataService.swift in Sources */,
+				CDB4F09F214415C300DAEB93 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
