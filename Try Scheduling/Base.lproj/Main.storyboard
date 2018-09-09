@@ -73,7 +73,7 @@
             </objects>
             <point key="canvasLocation" x="-2324" y="-102"/>
         </scene>
-        <!--Item 2-->
+        <!--Schedule-->
         <scene sceneID="ZLW-QJ-8h4">
             <objects>
                 <viewController id="cuh-Ns-KVo" sceneMemberID="viewController">
@@ -87,9 +87,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGE-Eb-Zn0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r9w-IU-pR7">
+                                        <rect key="frame" x="145" y="30" width="86" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gaw-mU-2Y1">
+                                        <rect key="frame" x="30" y="30" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7gF-zi-Xjd"/>
+                                            <constraint firstAttribute="width" constant="30" id="pPK-gJ-fnA"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="Gaw-mU-2Y1" firstAttribute="top" secondItem="CGE-Eb-Zn0" secondAttribute="top" constant="30" id="JOw-jO-Mas"/>
+                                    <constraint firstItem="Gaw-mU-2Y1" firstAttribute="leading" secondItem="CGE-Eb-Zn0" secondAttribute="leading" constant="30" id="R9a-XH-FHr"/>
                                     <constraint firstAttribute="height" constant="70" id="ftt-Nk-Hov"/>
+                                    <constraint firstItem="r9w-IU-pR7" firstAttribute="top" secondItem="CGE-Eb-Zn0" secondAttribute="top" constant="30" id="nVk-my-a2z"/>
+                                    <constraint firstItem="r9w-IU-pR7" firstAttribute="centerX" secondItem="CGE-Eb-Zn0" secondAttribute="centerX" id="okQ-Ih-XFK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -100,16 +120,79 @@
                             <constraint firstItem="CGE-Eb-Zn0" firstAttribute="top" secondItem="CHX-Qo-mCN" secondAttribute="top" id="zXO-kK-YF6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="7OK-U1-WvO"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="icons8-appointment-scheduling-filled-50" selectedImage="icons8-appointment-scheduling-filled-50" id="7OK-U1-WvO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qK6-m0-0SF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="66"/>
+            <point key="canvasLocation" x="-367" y="-102"/>
         </scene>
-        <!--Item 1-->
+        <!--Requests-->
+        <scene sceneID="g75-qf-5ef">
+            <objects>
+                <viewController id="9KJ-Gh-khn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IuS-XW-HF4"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Ah-lj-OqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G4H-MH-M6X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVV-6Z-bvk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SM4-7T-CtB">
+                                        <rect key="frame" x="145" y="30" width="85" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cI-pz-U5B">
+                                        <rect key="frame" x="325" y="30" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="9Uv-5o-mh9"/>
+                                            <constraint firstAttribute="width" constant="30" id="H50-LL-Fx7"/>
+                                        </constraints>
+                                        <state key="normal" image="cancel"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmv-rP-4Ta">
+                                        <rect key="frame" x="20" y="30" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="YdT-FK-Ggr"/>
+                                            <constraint firstAttribute="height" constant="30" id="ljK-1j-Ayy"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Jmv-rP-4Ta" firstAttribute="top" secondItem="DVV-6Z-bvk" secondAttribute="top" constant="30" id="7wl-sd-ZCk"/>
+                                    <constraint firstItem="Jmv-rP-4Ta" firstAttribute="leading" secondItem="DVV-6Z-bvk" secondAttribute="leading" constant="20" id="AG4-rj-q2f"/>
+                                    <constraint firstItem="SM4-7T-CtB" firstAttribute="centerX" secondItem="DVV-6Z-bvk" secondAttribute="centerX" id="ODh-x0-axi"/>
+                                    <constraint firstItem="SM4-7T-CtB" firstAttribute="top" secondItem="DVV-6Z-bvk" secondAttribute="top" constant="30" id="YI1-4x-UFU"/>
+                                    <constraint firstItem="2cI-pz-U5B" firstAttribute="top" secondItem="DVV-6Z-bvk" secondAttribute="top" constant="30" id="ruK-C6-86m"/>
+                                    <constraint firstAttribute="height" constant="70" id="utC-J8-upW"/>
+                                    <constraint firstAttribute="trailing" secondItem="2cI-pz-U5B" secondAttribute="trailing" constant="20" id="zuz-TR-o6H"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862750000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="DVV-6Z-bvk" secondAttribute="trailing" id="JOU-CT-D1L"/>
+                            <constraint firstItem="DVV-6Z-bvk" firstAttribute="top" secondItem="G4H-MH-M6X" secondAttribute="top" id="Ub0-py-6hL"/>
+                            <constraint firstItem="DVV-6Z-bvk" firstAttribute="leading" secondItem="G4H-MH-M6X" secondAttribute="leading" id="c7i-gF-vVS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Requests" image="icons8-appointment-scheduling-50" selectedImage="icons8-appointment-scheduling-50" id="KGW-Sh-Uov"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOM-uN-NRl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-367" y="697"/>
+        </scene>
+        <!--Calendar-->
         <scene sceneID="4T0-LT-C4o">
             <objects>
-                <viewController id="ZzI-gB-LK0" sceneMemberID="viewController">
+                <viewController id="ZzI-gB-LK0" customClass="CalendarVCViewController" customModule="Try_Scheduling" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tdh-np-ve0"/>
                         <viewControllerLayoutGuide type="bottom" id="vf5-VK-wZx"/>
@@ -120,9 +203,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plm-in-Xyl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orA-9t-xkV">
+                                        <rect key="frame" x="20" y="30" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ViZ-gX-YaN"/>
+                                            <constraint firstAttribute="width" constant="30" id="puJ-5x-Q4r"/>
+                                        </constraints>
+                                        <state key="normal" image="back"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO7-OB-ceg">
+                                        <rect key="frame" x="145.5" y="30" width="84" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="DO7-OB-ceg" firstAttribute="centerX" secondItem="plm-in-Xyl" secondAttribute="centerX" id="A86-cL-Vqi"/>
                                     <constraint firstAttribute="height" constant="70" id="GAI-KC-xgZ"/>
+                                    <constraint firstItem="orA-9t-xkV" firstAttribute="leading" secondItem="plm-in-Xyl" secondAttribute="leading" constant="20" id="b3c-fG-Kck"/>
+                                    <constraint firstItem="orA-9t-xkV" firstAttribute="top" secondItem="plm-in-Xyl" secondAttribute="top" constant="30" id="iT5-m0-oqD"/>
+                                    <constraint firstItem="DO7-OB-ceg" firstAttribute="top" secondItem="plm-in-Xyl" secondAttribute="top" constant="30" id="soe-Ld-PUb"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -133,24 +236,27 @@
                             <constraint firstItem="plm-in-Xyl" firstAttribute="top" secondItem="4XZ-2p-RNu" secondAttribute="top" id="noT-Z3-hGp"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="YSP-Mt-2WQ"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="icons8-calendar-50" selectedImage="icons8-calendar-50" id="YSP-Mt-2WQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSk-Up-oZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="-637"/>
+            <point key="canvasLocation" x="-367.19999999999999" y="-802.848575712144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="C0x-8N-qf9">
             <objects>
                 <tabBarController id="310-fd-8YV" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b5A-x4-F9O">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b5A-x4-F9O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="ZzI-gB-LK0" kind="relationship" relationship="viewControllers" id="hfm-gA-8jx"/>
                         <segue destination="cuh-Ns-KVo" kind="relationship" relationship="viewControllers" id="5ho-2j-uOL"/>
+                        <segue destination="9KJ-Gh-khn" kind="relationship" relationship="viewControllers" id="DqJ-vv-E5T"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cMi-f2-cKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -158,4 +264,11 @@
             <point key="canvasLocation" x="-1503" y="-102"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="100" height="100"/>
+        <image name="cancel" width="500" height="500"/>
+        <image name="icons8-appointment-scheduling-50" width="50" height="50"/>
+        <image name="icons8-appointment-scheduling-filled-50" width="50" height="50"/>
+        <image name="icons8-calendar-50" width="50" height="50"/>
+    </resources>
 </document>

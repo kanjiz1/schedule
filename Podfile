@@ -10,6 +10,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
+pod 'CVCalendar', '~> 1.6.1'
 
   target 'Try SchedulingTests' do
     inherit! :search_paths
