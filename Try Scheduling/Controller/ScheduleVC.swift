@@ -22,10 +22,10 @@ class ScheduleVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        tableView.estimatedRowHeight = 100
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 120
+        //tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.reloadData()
     }
-    
 }
 
 extension ScheduleVC: UITableViewDelegate, UITableViewDataSource {
@@ -34,11 +34,13 @@ extension ScheduleVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return schedules.count
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SCHEDULE_CELL) as? ScheduleCell else {return ScheduleCell()}
+        cell.configureCell(date: "Today", shift: 3, comments: "Today is a good day to work")
+        return cell
     }
     
 }
