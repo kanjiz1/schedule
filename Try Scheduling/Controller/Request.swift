@@ -26,13 +26,15 @@ class Request {
         return _comments
     }
     
-    enum shiftLength {
-        case fullShift, halfShift
+    enum shiftLength: String {
+        case fullShift = "8 Hours"
+        case halfShift = "4 Hours"
     }
     
-    init(dateOfRequest date: String, shiftOfRequest shift: Int, shiftLength length: shiftLength) {
+    init(dateOfRequest date: String, shiftOfRequest shift: Int, shiftLength length: shiftLength, anyComments comment: String) {
         _date = date
         _shift = shift
         requestType = length
+        _comments = comment
     }
 }
