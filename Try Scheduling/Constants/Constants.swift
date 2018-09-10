@@ -10,3 +10,4 @@ import Foundation
 let LOGIN_VC = "loginVC"
 let TAB_VC = "tabVC"
 let SCHEDULE_CELL = "scheduleCell"
+let SCHEDULE_DETAILS = "scheduleFeed"

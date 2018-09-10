@@ -32,6 +32,8 @@
 		CDC4AF162145618400F1C925 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF152145618400F1C925 /* Constants.swift */; };
 		CDC4AF18214562EA00F1C925 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF17214562EA00F1C925 /* ScheduleVC.swift */; };
 		CDC4AF1A2145631100F1C925 /* RequestsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF192145631100F1C925 /* RequestsVC.swift */; };
+		CDC4AF1C21468B1100F1C925 /* DateExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF1B21468B1100F1C925 /* DateExt.swift */; };
+		CDC4AF1E2146925B00F1C925 /* ScheduleFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF1D2146925B00F1C925 /* ScheduleFeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		CDC4AF152145618400F1C925 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CDC4AF17214562EA00F1C925 /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
 		CDC4AF192145631100F1C925 /* RequestsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsVC.swift; sourceTree = "<group>"; };
+		CDC4AF1B21468B1100F1C925 /* DateExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DateExt.swift; path = "Try Scheduling/Controller/DateExt.swift"; sourceTree = SOURCE_ROOT; };
+		CDC4AF1D2146925B00F1C925 /* ScheduleFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleFeedVC.swift; sourceTree = "<group>"; };
 		D2F1FBC42F8192DFA4891679 /* Pods-Try Scheduling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try Scheduling.release.xcconfig"; path = "Pods/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling.release.xcconfig"; sourceTree = "<group>"; };
 		E52CDA17182082D92D2BB80E /* Pods-Try SchedulingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try SchedulingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Try SchedulingTests/Pods-Try SchedulingTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6CBED7ABFA671E4C6DB3D92 /* Pods-Try SchedulingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Try SchedulingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Try SchedulingUITests/Pods-Try SchedulingUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +200,7 @@
 				CDB4F0A22144CB7100DAEB93 /* CalendarVC.swift */,
 				CDC4AF17214562EA00F1C925 /* ScheduleVC.swift */,
 				CDC4AF192145631100F1C925 /* RequestsVC.swift */,
+				CDC4AF1D2146925B00F1C925 /* ScheduleFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				CDB4F09A2144139A00DAEB93 /* UIViewControllerExt.swift */,
 				CDB4F09C214414A400DAEB93 /* UIViewExt.swift */,
 				CDB4F0A62144D9C600DAEB93 /* CalenderVCExt.swift */,
+				CDC4AF1B21468B1100F1C925 /* DateExt.swift */,
 			);
 			name = Extensions;
 			path = "New Group2";
@@ -483,6 +489,7 @@
 				CDC4AF1A2145631100F1C925 /* RequestsVC.swift in Sources */,
 				CDB4F09D214414A400DAEB93 /* UIViewExt.swift in Sources */,
 				CDB4F0A32144CB7100DAEB93 /* CalendarVC.swift in Sources */,
+				CDC4AF1E2146925B00F1C925 /* ScheduleFeedVC.swift in Sources */,
 				CDB4F09B2144139A00DAEB93 /* UIViewControllerExt.swift in Sources */,
 				CDC4AF132145613400F1C925 /* ScheduleCell.swift in Sources */,
 				CDB4F0A52144D2DE00DAEB93 /* ColorsConfig.swift in Sources */,
@@ -490,6 +497,7 @@
 				CDB4F0A72144D9C600DAEB93 /* CalenderVCExt.swift in Sources */,
 				CD0EED702144007B00CE4D7C /* LoginVC.swift in Sources */,
 				CDC4AF1121455F6300F1C925 /* Schedule.swift in Sources */,
+				CDC4AF1C21468B1100F1C925 /* DateExt.swift in Sources */,
 				CDB4F0A12144B40100DAEB93 /* InSetTextField.swift in Sources */,
 				CD0EED762144007B00CE4D7C /* Try_Scheduling.xcdatamodeld in Sources */,
 				CD0EED6E2144007B00CE4D7C /* AppDelegate.swift in Sources */,
