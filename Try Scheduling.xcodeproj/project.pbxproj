@@ -18,6 +18,7 @@
 		CD0EED7B2144007D00CE4D7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD0EED792144007D00CE4D7C /* LaunchScreen.storyboard */; };
 		CD0EED862144007D00CE4D7C /* Try_SchedulingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED852144007D00CE4D7C /* Try_SchedulingTests.swift */; };
 		CD0EED912144007D00CE4D7C /* Try_SchedulingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0EED902144007D00CE4D7C /* Try_SchedulingUITests.swift */; };
+		CD0F2C4221DD43C500A8FA91 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F2C4121DD43C500A8FA91 /* R.generated.swift */; };
 		CDB4F09721440A8400DAEB93 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDB4F09621440A8400DAEB93 /* GoogleService-Info.plist */; };
 		CDB4F09921440E2600DAEB93 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F09821440E2600DAEB93 /* DataService.swift */; };
 		CDB4F09B2144139A00DAEB93 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F09A2144139A00DAEB93 /* UIViewControllerExt.swift */; };
@@ -77,6 +78,7 @@
 		CD0EED8C2144007D00CE4D7C /* Try SchedulingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Try SchedulingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0EED902144007D00CE4D7C /* Try_SchedulingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Try_SchedulingUITests.swift; sourceTree = "<group>"; };
 		CD0EED922144007D00CE4D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD0F2C4121DD43C500A8FA91 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		CDB4F09621440A8400DAEB93 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDB4F09821440E2600DAEB93 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		CDB4F09A2144139A00DAEB93 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExt.swift; path = "Try Scheduling/Services/UIViewControllerExt.swift"; sourceTree = SOURCE_ROOT; };
@@ -257,6 +259,7 @@
 		CDC4AF142145616F00F1C925 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				CD0F2C4121DD43C500A8FA91 /* R.generated.swift */,
 				CDB4F0A42144D2DE00DAEB93 /* ColorsConfig.swift */,
 				CDC4AF152145618400F1C925 /* Constants.swift */,
 			);
@@ -284,6 +287,7 @@
 			buildConfigurationList = CD0EED952144007D00CE4D7C /* Build configuration list for PBXNativeTarget "Try Scheduling" */;
 			buildPhases = (
 				05A7F230CA02DE4A383A4C7B /* [CP] Check Pods Manifest.lock */,
+				CD0F2C4021DD299C00A8FA91 /* ShellScript */,
 				CD0EED662144007B00CE4D7C /* Sources */,
 				CD0EED672144007B00CE4D7C /* Frameworks */,
 				CD0EED682144007B00CE4D7C /* Resources */,
@@ -490,6 +494,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CD0F2C4021DD299C00A8FA91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -506,6 +529,7 @@
 				CDC4AF132145613400F1C925 /* ScheduleCell.swift in Sources */,
 				CDB4F0A52144D2DE00DAEB93 /* ColorsConfig.swift in Sources */,
 				CDC4AF18214562EA00F1C925 /* ScheduleVC.swift in Sources */,
+				CD0F2C4221DD43C500A8FA91 /* R.generated.swift in Sources */,
 				CDC4AF202146A23500F1C925 /* MoreVC.swift in Sources */,
 				CDB4F0A72144D9C600DAEB93 /* CalenderVCExt.swift in Sources */,
 				CD0EED702144007B00CE4D7C /* LoginVC.swift in Sources */,
@@ -694,7 +718,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Try Scheduling/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-Scheduling";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -710,7 +737,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Try Scheduling/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-Scheduling";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -727,7 +757,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Try SchedulingTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -745,7 +779,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Try SchedulingTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -762,7 +800,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Try SchedulingUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -779,7 +821,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W87L6W32DM;
 				INFOPLIST_FILE = "Try SchedulingUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
