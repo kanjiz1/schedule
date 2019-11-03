@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		CDB4F0A32144CB7100DAEB93 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A22144CB7100DAEB93 /* CalendarVC.swift */; };
 		CDB4F0A52144D2DE00DAEB93 /* ColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A42144D2DE00DAEB93 /* ColorsConfig.swift */; };
 		CDB4F0A72144D9C600DAEB93 /* CalenderVCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A62144D9C600DAEB93 /* CalenderVCExt.swift */; };
+		CDBF1FE2236E8B4200B4947E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDBF1FE1236E8B4200B4947E /* GoogleService-Info.plist */; };
 		CDC4AF1121455F6300F1C925 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF1021455F6300F1C925 /* Schedule.swift */; };
 		CDC4AF132145613400F1C925 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF122145613400F1C925 /* ScheduleCell.swift */; };
 		CDC4AF162145618400F1C925 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF152145618400F1C925 /* Constants.swift */; };
@@ -88,6 +89,7 @@
 		CDB4F0A22144CB7100DAEB93 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		CDB4F0A42144D2DE00DAEB93 /* ColorsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorsConfig.swift; path = "Try Scheduling/Constants/ColorsConfig.swift"; sourceTree = SOURCE_ROOT; };
 		CDB4F0A62144D9C600DAEB93 /* CalenderVCExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalenderVCExt.swift; path = "Try Scheduling/Controller/CalenderVCExt.swift"; sourceTree = SOURCE_ROOT; };
+		CDBF1FE1236E8B4200B4947E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CDC4AF1021455F6300F1C925 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = "Try Scheduling/Controller/Schedule.swift"; sourceTree = SOURCE_ROOT; };
 		CDC4AF122145613400F1C925 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ScheduleCell.swift; path = "Try Scheduling/Controller/ScheduleCell.swift"; sourceTree = SOURCE_ROOT; };
 		CDC4AF152145618400F1C925 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		CD0EED6C2144007B00CE4D7C /* Try Scheduling */ = {
 			isa = PBXGroup;
 			children = (
+				CDBF1FE1236E8B4200B4947E /* GoogleService-Info.plist */,
 				CDC4AF142145616F00F1C925 /* Constants */,
 				CDB4F0952144087200DAEB93 /* Services */,
 				CDB4F0942144086400DAEB93 /* Extensions */,
@@ -352,13 +355,16 @@
 				TargetAttributes = {
 					CD0EED692144007B00CE4D7C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
 					};
 					CD0EED802144007D00CE4D7C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
 						TestTargetID = CD0EED692144007B00CE4D7C;
 					};
 					CD0EED8B2144007D00CE4D7C = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1120;
 						TestTargetID = CD0EED692144007B00CE4D7C;
 					};
 				};
@@ -390,6 +396,7 @@
 			files = (
 				CD0EED7B2144007D00CE4D7C /* LaunchScreen.storyboard in Resources */,
 				CDB4F09721440A8400DAEB93 /* GoogleService-Info.plist in Resources */,
+				CDBF1FE2236E8B4200B4947E /* GoogleService-Info.plist in Resources */,
 				CD0EED782144007D00CE4D7C /* Assets.xcassets in Resources */,
 				CD0EED732144007B00CE4D7C /* Main.storyboard in Resources */,
 			);
@@ -453,27 +460,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CVCalendar/CVCalendar.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CVCalendar.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Try Scheduling/Pods-Try Scheduling-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BBD3882A44C02BF314D012F4 /* [CP] Check Pods Manifest.lock */ = {
@@ -724,7 +720,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-Scheduling";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -743,7 +739,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-Scheduling";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -764,7 +760,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Try Scheduling.app/Try Scheduling";
 			};
@@ -786,7 +782,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Try Scheduling.app/Try Scheduling";
 			};
@@ -807,7 +803,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Try Scheduling";
 			};
@@ -828,7 +824,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.oforkanjiodekpe.Try-SchedulingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Try Scheduling";
 			};

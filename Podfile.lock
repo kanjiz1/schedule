@@ -87,7 +87,7 @@ DEPENDENCIES:
   - R.swift
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - CVCalendar
     - Firebase
     - FirebaseAnalytics
@@ -125,4 +125,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: b59f892b67fa6c80acaf7baf95381e57c543f0b2
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
