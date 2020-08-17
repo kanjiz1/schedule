@@ -28,7 +28,6 @@
 		CDB4F0A32144CB7100DAEB93 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A22144CB7100DAEB93 /* CalendarVC.swift */; };
 		CDB4F0A52144D2DE00DAEB93 /* ColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A42144D2DE00DAEB93 /* ColorsConfig.swift */; };
 		CDB4F0A72144D9C600DAEB93 /* CalenderVCExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB4F0A62144D9C600DAEB93 /* CalenderVCExt.swift */; };
-		CDBF1FE2236E8B4200B4947E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CDBF1FE1236E8B4200B4947E /* GoogleService-Info.plist */; };
 		CDC4AF1121455F6300F1C925 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF1021455F6300F1C925 /* Schedule.swift */; };
 		CDC4AF132145613400F1C925 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF122145613400F1C925 /* ScheduleCell.swift */; };
 		CDC4AF162145618400F1C925 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4AF152145618400F1C925 /* Constants.swift */; };
@@ -350,7 +349,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Oforkanji Odekpe";
 				TargetAttributes = {
 					CD0EED692144007B00CE4D7C = {
@@ -396,7 +395,6 @@
 			files = (
 				CD0EED7B2144007D00CE4D7C /* LaunchScreen.storyboard in Resources */,
 				CDB4F09721440A8400DAEB93 /* GoogleService-Info.plist in Resources */,
-				CDBF1FE2236E8B4200B4947E /* GoogleService-Info.plist in Resources */,
 				CD0EED782144007D00CE4D7C /* Assets.xcassets in Resources */,
 				CD0EED732144007B00CE4D7C /* Main.storyboard in Resources */,
 			);
@@ -643,7 +641,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -697,7 +695,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
